@@ -8,6 +8,8 @@ export default function LoginScreen({ navigation }) {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Tela de Login</Text>
+      <Text>Em breve...</Text>
+
       <TextInput style={styles.TextInput} placeholder="Usuário" />
       <TextInput style={styles.TextInput} placeholder="Senha" secureTextEntry />
 

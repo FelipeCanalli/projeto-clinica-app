@@ -20,7 +20,9 @@ export default function InicialScreen() {
           conosco! Ver Todos
         </Text>
 
-        <Text style={styles.title}>Nossos Exames</Text>
+        <Text style={styles.title}>
+          Exames Laboratoriais e Cardiológicos sem jejum
+        </Text>
 
         <View style={styles.caixa}>
           <Image
@@ -37,6 +39,11 @@ export default function InicialScreen() {
           />
         </View>
         <View style={styles.caixa}>
+          <Text style={styles.title2}>Check-up</Text>
+          <Text style={styles.title2}> {"Colesterol e\nTriglicérides"}</Text>
+          <Text style={styles.title2}>{"Dosagem de\nVitaminas"} </Text>
+        </View>
+        <View style={styles.caixa}>
           <Image
             source={require("../assets/images/hormonio.png")}
             style={styles.imagens}
@@ -49,6 +56,11 @@ export default function InicialScreen() {
             source={require("../assets/images/gliserina.png")}
             style={styles.imagens}
           />
+        </View>
+        <View style={styles.caixa}>
+          <Text style={styles.title2}>{"Dosagens\nHormonais"}</Text>
+          <Text style={styles.title2}>Hemograma</Text>
+          <Text style={styles.title2}>Cardiológico</Text>
         </View>
       </ScrollView>
     </View>
@@ -64,14 +76,23 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 20,
-    // fontWeight: "bold",
-    fontStyle: "italic",
+    fontWeight: "bold",
     margin: 10,
+    marginLeft: "auto",
+    marginRight: "auto",
+  },
+  title2: {
+    fontSize: 13,
+    marginBottom: 10,
+    marginLeft: "auto",
+    marginRight: "auto",
   },
   separator: {
-    marginVertical: 30,
+    marginVertical: 10,
     height: 1,
     width: "80%",
+    marginLeft: "auto",
+    marginRight: "auto",
   },
   text: {
     fontSize: 16,
@@ -86,6 +107,7 @@ const styles = StyleSheet.create({
   imagens: {
     alignItems: "center",
     justifyContent: "center",
-    margin: 20,
+    marginHorizontal: 35,
+    marginVertical: 10,
   },
 });

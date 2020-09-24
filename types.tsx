@@ -4,14 +4,29 @@ export type RootStackParamList = {
 };
 
 export type BottomTabParamList = {
-  TabOne: undefined;
-  TabTwo: undefined;
+  Login: undefined;
+  Inicial: undefined;
+  Cadastro: undefined;
+  Listar: undefined;
+  Localização: undefined;
 };
 
-export type TabOneParamList = {
-  TabOneScreen: undefined;
+export type InicialParamList = {
+  InicialScreen: undefined;
 };
 
-export type TabTwoParamList = {
-  TabTwoScreen: undefined;
+export type LoginParamList = {
+  LoginScreen: undefined;
+};
+
+export type CadastroParamList = {
+  CadastroScreen: undefined;
+};
+
+export type ListarParamList = {
+  ListarScreen: undefined;
+};
+
+export type LocalizacaoParamList = {
+  LocalizacaoScreen: undefined;
 };

@@ -11,9 +11,7 @@ export default function ListarScreen() {
 
   // carregando dados da api usando useEffect
   React.useEffect(() => {
-    fetch(
-      "http://192.168.0.23/revisao/2- API dbclinica/services/paciente/exibir.php"
-    )
+    fetch("http://192.168.0.23/projeto-clinica/services/paciente/exibir.php")
       .then((response) => response.json())
       .then((pacientes) => setData(pacientes.dados))
       .catch((error) => console.error(error))

@@ -23,10 +23,6 @@ export default function CadastroScreen() {
   const [senha, setSenha] = React.useState("");
   const [confirmar, setConfirmar] = React.useState("");
 
-  //  function limpaInput(){
-  //     this.inputTeste.clear();
-  //   }
-
   return (
     <View style={styles.container}>
       <Image
@@ -175,27 +171,24 @@ const styles = StyleSheet.create({
 });
 
 function efetuarCadastro() {
-  fetch(
-    "http://192.168.0.23/revisao/2- API dbclinica/services/paciente/cadastrar.php",
-    {
-      method: "POST",
-      headers: {
-        Accept: "appllication/json",
-        "Content-Type": "aplication/json",
-      },
+  fetch("http://192.168.0.23/projeto-clinica/services/paciente/cadastrar.php", {
+    method: "POST",
+    headers: {
+      Accept: "appllication/json",
+      "Content-Type": "aplication/json",
+    },
 
-      body: JSON.stringify({
-        // dados da api : let,
-        nome: nom,
-        nascimento: nas,
-        sexo: sex,
-        email: ema,
-        telefone: tel,
-        usuario: usu,
-        senha: sen,
-      }),
-    }
-  )
+    body: JSON.stringify({
+      // dados da api : let,
+      nome: nom,
+      nascimento: nas,
+      sexo: sex,
+      email: ema,
+      telefone: tel,
+      usuario: usu,
+      senha: sen,
+    }),
+  })
     .then((response) => response.json())
     .then((resposta) => {
       console.log(resposta);
