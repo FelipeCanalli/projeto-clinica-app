@@ -1,6 +1,6 @@
 import * as React from "react";
 import { ActivityIndicator, StyleSheet } from "react-native";
-import { FlatList } from "react-native-gesture-handler";
+import { FlatList, TouchableOpacity } from "react-native-gesture-handler";
 import { Picker } from "@react-native-community/picker";
 
 import { Text, View } from "../components/Themed";
